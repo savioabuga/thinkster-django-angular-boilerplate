@@ -21,6 +21,7 @@
     * @desc The Factory to be returned
     */
     var Authentication = {
+      login: login,
       register: register
     };
 
@@ -43,5 +44,10 @@
         password: password,
         email: email
       });
+
+    function logout(){
+      return $http.post('api/v1/auth/logout');
+    }
+
     }
 })();
