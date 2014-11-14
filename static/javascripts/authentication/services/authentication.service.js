@@ -45,8 +45,8 @@
         email: email
       });
 
-    function logout(){
-      return $http.post('api/v1/auth/logout');
+    function login(){
+      return $http.post('api/v1/auth/login');
     }
 
     }
